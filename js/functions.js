@@ -1,10 +1,11 @@
+// --- Cookie banner ---
 document.addEventListener('DOMContentLoaded', function () {
   const cookiesBanner = document.getElementById('cookies');
   const acceptButton = document.getElementById('cookiesAcceptButton');
   const declineButton = document.getElementById('cookiesDeclineButton');
 
-  // Prüfen, ob Nutzer bereits entschieden hat
-  const cookieDecision = localStorage.getItem('TabsOnFire 🔥🗂️ Cookies');
+  // Always check localStorage
+  const cookieDecision = localStorage.getItem('TabsOnFireCookies');
 
   if (!cookieDecision) {
     cookiesBanner.style.display = 'block';
@@ -15,23 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Nutzer akzeptiert Cookies
+  // Accept button
   acceptButton.addEventListener('click', function () {
-    localStorage.setItem('TabsOnFire 🔥🗂️ Cookies', 'accepted');
+    localStorage.setItem('TabsOnFireCookies', 'accepted');
     cookiesBanner.style.display = 'none';
     loadGoogleAnalytics();
   });
 
-  // Nutzer lehnt Cookies ab
+  // Decline button
   declineButton.addEventListener('click', function () {
-    localStorage.setItem('TabsOnFire 🔥🗂️ Cookies', 'declined');
+    localStorage.setItem('TabsOnFireCookies', 'declined');
     cookiesBanner.style.display = 'none';
-    // GA wird nicht geladen
   });
 
-  // GA laden nur nach Einwilligung
+  // GA is loaded after acceptance
   function loadGoogleAnalytics() {
-    // Beispiel für GA4
     const script = document.createElement('script');
     script.src = "https://www.googletagmanager.com/gtag/js?id=G-43C8S7QD4X";
     script.async = true;
