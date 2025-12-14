@@ -25,7 +25,19 @@
 <meta name="apple-mobile-web-app-title" content="FireTabs" />
 <link rel="manifest" href="img/favicon/site.webmanifest" />
   </head>
-  <body id="privacy"><!-- include includes/cookies.pug -->
+  <body id="privacy">
+    <div id="cookies">
+      <div id="cookiesDimmer">
+        <div id="cookiesModal">
+          <h3>Tracking anonymized usage data</h3>
+          <p>This page uses Google Analytics. By accepting tracking, you're helping me – a nerdy Designer/Dev 🤓 – to improve my skills and build better products. Read more under <a href="privacy"> privacy</a>.</p>
+          <div id="cookiesActions">
+            <button class="primary" id="cookiesAcceptButton">Accept</button>
+            <button class="secondary" id="cookiesDeclineButton">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="logo"><a href="index"><span>TabsOnFire</span> 🔥🗂️</a></div>
       <nav>
