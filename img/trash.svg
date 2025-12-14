@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="currentColor" d="M0 0H24V24H0z"/></mask><g mask="url(#a)"><path fill="currentColor" d="M4.66 21.203V6.066H3.521V3.79h5.34V2.653h6.264v1.138h5.352v2.275h-1.137v15.137H4.659zm2.274-2.275h10.132V6.066H6.934v12.862zm1.958-1.934h2.138v-9H8.892v9zm4.078 0h2.137v-9H12.97v9z"/></g></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1733_151" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="currentColor"/>
+</mask>
+<g mask="url(#mask0_1733_151)">
+<path d="M4.65923 21.2033V6.06582H3.52173V3.79082H8.86248V2.65332H15.1255V3.79082H20.4782V6.06582H19.3407V21.2033H4.65923ZM6.93423 18.9283H17.0657V6.06582H6.93423V18.9283ZM8.89248 16.9941H11.03V7.99407H8.89248V16.9941ZM12.97 16.9941H15.1075V7.99407H12.97V16.9941Z" fill="currentColor"/>
+</g>
+</svg>
