@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <base href="/tabsonfire/">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>TabsOnFire 🔥🗂️</title>
     <meta name="author" content="Manuel Blex">
@@ -26,20 +25,32 @@
 <meta name="apple-mobile-web-app-title" content="FireTabs" />
 <link rel="manifest" href="img/favicon/site.webmanifest" />
   </head>
-  <body id="about"><!-- include includes/cookies.pug -->
+  <body id="about">
+    <div id="cookies">
+      <div id="cookiesDimmer">
+        <div id="cookiesModal">
+          <h3>Tracking anonymized usage data</h3>
+          <p>This page uses Google Analytics. By accepting tracking, you're helping me – a nerdy Designer/Dev 🤓 – to improve my skills and build better products. Read more under <a href="/privacy"> privacy</a>.</p>
+          <div id="cookiesActions">
+            <button class="primary" id="cookiesAcceptButton">Accept</button>
+            <button class="secondary" id="cookiesDeclineButton">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
-      <div class="logo"><a href="/index" data-page="index"><span>TabsOnFire</span> 🔥🗂️</a></div>
+      <div class="logo"><a href="index.html"><span>TabsOnFire</span> 🔥🗂️</a></div>
       <nav>
         <ul>
-          <li><a href="/index" data-page="index">Create</a></li>
-          <li><a href="/about" data-page="about">About</a></li>
+          <li><a href="index.html">Create</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="panel">
         <h1>Great, but not great</h1>
-        <p>Did you know you can set multiple custom opening tabs in Firefox? Go to <code>Firefox &gt; Settings...</code> or type <code>about:preferences</code> into the address bar and navigate to the <strong>Home</strong> section to find this <strong>Homepage and new windows</strong> input:</p><img src="/img/firefox-settings.png" alt="Firefox Settings about:preferences Homepage and new windows">
+        <p>Did you know you can set multiple custom opening tabs in Firefox? Go to <code>Firefox &gt; Settings...</code> or type <code>about:preferences</code> into the address bar and navigate to the <strong>Home</strong> section to find this <strong>Homepage and new windows</strong> input:</p><img src="img/firefox-settings.png" alt="Firefox Settings about:preferences Homepage and new windows">
         <p>Here you can add custom URLs divided by a "pipe" symbol (this one | here) to open multiple pages on browser start.</p>
         <p>It's a very convenient feature, but the usability is quite poor. Editing URLs and identifying "pipes" in between uppercase <code>I</code> and lowercase <code>l</code> characters in a single row input field is no fun. That's why I've built this little web tool here.</p>
         <p>And if you're still here reading: I hope it helped! 🍻</p>
@@ -48,8 +59,8 @@
     <footer>
       <nav>
         <ul>
-          <li><a href="/legal" data-page="legal">Legal</a></li>
-          <li><a href="/privacy" data-page="privacy">Privacy</a></li>
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
         </ul>
       </nav>
       <div class="copyright">© 2025 All rights reserved</div>
