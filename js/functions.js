@@ -238,3 +238,6 @@ copyBtn.addEventListener("click", async () => {
     }, 2000);
   }
 });
+
+// --- Copyright year ---
+document.getElementById('year').textContent = new Date().getFullYear();
